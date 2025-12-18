@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    right: 570px;
+    top: 13px;
+    opacity: 0.7; 
+}
+.search input{
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.search-2{
+    display: flex;
+    padding: 0px 30px;
+    gap: 35px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.search-2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Navigation section*/
+.navigation{
+    position: sticky;
+    top: 100px;
+    z-index: 999;
+    background-color: white;
+}
+.nav{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.nav-menu{
+    padding: 10px 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu a{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    color: red;
+    font-weight: 600;
+}
+.dropdown{
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    visibility: hidden;
+}
+h4{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+   padding: 12px 0;
+   display: block;
+   font-size: 15px;
+   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+   color: red;
+}
+.nav-menu li:hover .dropdown{
+    visibility: visible;
+}
+.dropdown a{
+    opacity: 0.7;
+    padding: 9px 0;
+    display: block;
+    font-size: 14px;
+}
+.dropdown a:hover{
+    transition: 0.3s ease;
+    font-weight: bold;
+    color: black;
+}
+
+/* Saree product*/
+.saree-product{
+    display: grid;
+}
+.sarees{
+    width: 20%;
+    padding: 10px 12px;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(0,0 ,0, 0.5);
+    border-radius: 8px;
+}
+.saree-product .sarees img{
+    width: 100%;
+}
+h3{
+    opacity: 0.5;
+}
+button{
+    background-color: #089069;
+    color: white;
+    width: 55px;
+    border-radius: 30px;
+    padding: 5px 0px;
+    border-style: none;
+}
